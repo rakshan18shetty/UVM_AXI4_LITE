@@ -1,0 +1,76 @@
+global coverage_group 0 pkg::subscriber::input_cg __coverage_subscriber.input_cg unused_subscriber_input_cg_loop_label pkg 0 1 0 0 0  ( 0 
+)
+ 1 1
+ 88 /fetools/work_area/frontend/Batch_11/rakshanshetty/systemverilog/axi4_lite/subscriber.sv
+ 7 0 0 0 1 0 0 0 0  1
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+0
+0
+0
+64
+0
+ 0
+
+0
+0
+0
+0
+end_coverage_group
+global coverage_group 0 pkg::subscriber::output_cg __coverage_subscriber.output_cg unused_subscriber_output_cg_loop_label pkg 0 1 0 0 0  ( 0 
+)
+ 0 9 0 0 0 1 0 0 0 0  1
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+0
+0
+0
+64
+0
+ 0
+
+0
+0
+0
+0
+end_coverage_group
