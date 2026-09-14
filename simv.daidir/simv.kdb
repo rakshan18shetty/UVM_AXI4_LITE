@@ -1,7 +1,7 @@
 rc file Version 1.0
 
 [Design]
-COMPILE_PATH=/fetools/work_area/frontend/Batch_11/rakshanshetty/systemverilog/axi4_lite
+COMPILE_PATH=/fetools/work_area/frontend/Batch_11/rakshanshetty/systemverilog/UVM_AXI4_LITE
 VERDI_HOME=/fetools/synopsys/installed_tools/verdi/verdi/Q-2020.03-SP2-8
 SystemC=FALSE
 UUM=FALSE

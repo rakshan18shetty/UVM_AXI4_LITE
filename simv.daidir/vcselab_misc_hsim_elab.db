@@ -1,6 +1,6 @@
 psSimBaseName                      	simv
 psLogFileName                      	fell.log
-pDaiDir                            	/fetools/work_area/frontend/Batch_11/rakshanshetty/systemverilog/axi4_lite/simv.daidir
+pDaiDir                            	/fetools/work_area/frontend/Batch_11/rakshanshetty/systemverilog/UVM_AXI4_LITE/simv.daidir
 destPath                           	csrc/
 fSharedMaster                      	0
 fHsimPCSharedLibSpecified          	0
