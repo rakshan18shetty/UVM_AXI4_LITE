@@ -32,14 +32,102 @@ global coverage_group 0 pkg::subscriber::input_cg __coverage_subscriber.input_cg
 0
  0
 
+3
 0
+1
 0
-0
-0
+ 6 awaddr 8 0 0 0 0 0 72 pkg_subscriber_11_0::pkg_subscriber_11_0_pkg_subscriber_11_0_input_cg_fn 72 pkg_subscriber_11_0::pkg_subscriber_11_0_pkg_subscriber_11_0_input_cg_fn 0 0 0 75 pkg_subscriber_11_0::pkg_subscriber_11_0_pkg_subscriber_11_0_input_cg_fn_1a 0 0 74 pkg_subscriber_11_0::pkg_subscriber_11_0_pkg_subscriber_11_0_input_cg_fn_0 0 0 0 -1 0 0 -1 0 0 0 2 32 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 6 1 1 0 0 1 1 3 rw1 9 0 0 1 0 0 0 0 0 74 pkg_subscriber_11_0::pkg_subscriber_11_0_pkg_subscriber_11_0_input_cg_fn_3 75 pkg_subscriber_11_0::pkg_subscriber_11_0_pkg_subscriber_11_0_input_cg_fn_1b 0 0 0 -1 0 0 -1 0 0 1 1 1 74 pkg_subscriber_11_0::pkg_subscriber_11_0_pkg_subscriber_11_0_input_cg_fn_1 0 74 pkg_subscriber_11_0::pkg_subscriber_11_0_pkg_subscriber_11_0_input_cg_fn_2 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 2 ro 10 0 0 1 0 0 0 0 0 74 pkg_subscriber_11_0::pkg_subscriber_11_0_pkg_subscriber_11_0_input_cg_fn_3 75 pkg_subscriber_11_0::pkg_subscriber_11_0_pkg_subscriber_11_0_input_cg_fn_1c 0 0 0 -1 0 0 -1 0 0 1 1 1 74 pkg_subscriber_11_0::pkg_subscriber_11_0_pkg_subscriber_11_0_input_cg_fn_4 0 74 pkg_subscriber_11_0::pkg_subscriber_11_0_pkg_subscriber_11_0_input_cg_fn_5 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 2 wo 11 0 0 1 0 0 0 0 0 74 pkg_subscriber_11_0::pkg_subscriber_11_0_pkg_subscriber_11_0_input_cg_fn_3 75 pkg_subscriber_11_0::pkg_subscriber_11_0_pkg_subscriber_11_0_input_cg_fn_1d 0 0 0 -1 0 0 -1 0 0 1 1 1 74 pkg_subscriber_11_0::pkg_subscriber_11_0_pkg_subscriber_11_0_input_cg_fn_7 0 74 pkg_subscriber_11_0::pkg_subscriber_11_0_pkg_subscriber_11_0_input_cg_fn_8 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 3 rw2 12 0 0 1 0 0 0 0 0 74 pkg_subscriber_11_0::pkg_subscriber_11_0_pkg_subscriber_11_0_input_cg_fn_3 75 pkg_subscriber_11_0::pkg_subscriber_11_0_pkg_subscriber_11_0_input_cg_fn_1e 0 0 0 -1 0 0 -1 0 0 1 1 1 74 pkg_subscriber_11_0::pkg_subscriber_11_0_pkg_subscriber_11_0_input_cg_fn_a 0 74 pkg_subscriber_11_0::pkg_subscriber_11_0_pkg_subscriber_11_0_input_cg_fn_b 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 8 invalid1 13 0 0 1 0 0 0 0 0 74 pkg_subscriber_11_0::pkg_subscriber_11_0_pkg_subscriber_11_0_input_cg_fn_d 75 pkg_subscriber_11_0::pkg_subscriber_11_0_pkg_subscriber_11_0_input_cg_fn_1f 0 0 0 -1 0 0 -1 0 0 1 1 1 74 pkg_subscriber_11_0::pkg_subscriber_11_0_pkg_subscriber_11_0_input_cg_fn_1 0 74 pkg_subscriber_11_0::pkg_subscriber_11_0_pkg_subscriber_11_0_input_cg_fn_b 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 8 invalid2 14 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 74 pkg_subscriber_11_0::pkg_subscriber_11_0_pkg_subscriber_11_0_input_cg_fn_e 0 74 pkg_subscriber_11_0::pkg_subscriber_11_0_pkg_subscriber_11_0_input_cg_fn_f 0 0 0 0 0
+ 0
+
+ 5 wstrb 16 0 0 0 0 0 75 pkg_subscriber_11_0::pkg_subscriber_11_0_pkg_subscriber_11_0_input_cg_fn_10 75 pkg_subscriber_11_0::pkg_subscriber_11_0_pkg_subscriber_11_0_input_cg_fn_10 0 0 0 0 0 0 75 pkg_subscriber_11_0::pkg_subscriber_11_0_pkg_subscriber_11_0_input_cg_fn_11 0 0 0 -1 0 0 -1 0 0 0 2 4 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 1 1 1 1 0 1 1 4 strb 17 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 74 pkg_subscriber_11_0::pkg_subscriber_11_0_pkg_subscriber_11_0_input_cg_fn_1 0 75 pkg_subscriber_11_0::pkg_subscriber_11_0_pkg_subscriber_11_0_input_cg_fn_12 0 0 0 0 0
+ 0
+
+ 6 araddr 19 0 0 0 0 0 75 pkg_subscriber_11_0::pkg_subscriber_11_0_pkg_subscriber_11_0_input_cg_fn_13 75 pkg_subscriber_11_0::pkg_subscriber_11_0_pkg_subscriber_11_0_input_cg_fn_13 0 0 0 75 pkg_subscriber_11_0::pkg_subscriber_11_0_pkg_subscriber_11_0_input_cg_fn_20 0 0 75 pkg_subscriber_11_0::pkg_subscriber_11_0_pkg_subscriber_11_0_input_cg_fn_14 0 0 0 -1 0 0 -1 0 0 0 2 32 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 6 1 1 0 0 1 1 3 rw1 20 0 0 1 0 0 0 0 0 75 pkg_subscriber_11_0::pkg_subscriber_11_0_pkg_subscriber_11_0_input_cg_fn_15 75 pkg_subscriber_11_0::pkg_subscriber_11_0_pkg_subscriber_11_0_input_cg_fn_21 0 0 0 -1 0 0 -1 0 0 1 1 1 74 pkg_subscriber_11_0::pkg_subscriber_11_0_pkg_subscriber_11_0_input_cg_fn_1 0 74 pkg_subscriber_11_0::pkg_subscriber_11_0_pkg_subscriber_11_0_input_cg_fn_2 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 2 ro 21 0 0 1 0 0 0 0 0 75 pkg_subscriber_11_0::pkg_subscriber_11_0_pkg_subscriber_11_0_input_cg_fn_15 75 pkg_subscriber_11_0::pkg_subscriber_11_0_pkg_subscriber_11_0_input_cg_fn_22 0 0 0 -1 0 0 -1 0 0 1 1 1 74 pkg_subscriber_11_0::pkg_subscriber_11_0_pkg_subscriber_11_0_input_cg_fn_4 0 74 pkg_subscriber_11_0::pkg_subscriber_11_0_pkg_subscriber_11_0_input_cg_fn_5 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 2 wo 22 0 0 1 0 0 0 0 0 75 pkg_subscriber_11_0::pkg_subscriber_11_0_pkg_subscriber_11_0_input_cg_fn_15 75 pkg_subscriber_11_0::pkg_subscriber_11_0_pkg_subscriber_11_0_input_cg_fn_23 0 0 0 -1 0 0 -1 0 0 1 1 1 74 pkg_subscriber_11_0::pkg_subscriber_11_0_pkg_subscriber_11_0_input_cg_fn_7 0 74 pkg_subscriber_11_0::pkg_subscriber_11_0_pkg_subscriber_11_0_input_cg_fn_8 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 3 rw2 23 0 0 1 0 0 0 0 0 75 pkg_subscriber_11_0::pkg_subscriber_11_0_pkg_subscriber_11_0_input_cg_fn_15 75 pkg_subscriber_11_0::pkg_subscriber_11_0_pkg_subscriber_11_0_input_cg_fn_24 0 0 0 -1 0 0 -1 0 0 1 1 1 74 pkg_subscriber_11_0::pkg_subscriber_11_0_pkg_subscriber_11_0_input_cg_fn_a 0 74 pkg_subscriber_11_0::pkg_subscriber_11_0_pkg_subscriber_11_0_input_cg_fn_b 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 8 invalid1 24 0 0 1 0 0 0 0 0 75 pkg_subscriber_11_0::pkg_subscriber_11_0_pkg_subscriber_11_0_input_cg_fn_19 75 pkg_subscriber_11_0::pkg_subscriber_11_0_pkg_subscriber_11_0_input_cg_fn_25 0 0 0 -1 0 0 -1 0 0 1 1 1 74 pkg_subscriber_11_0::pkg_subscriber_11_0_pkg_subscriber_11_0_input_cg_fn_1 0 74 pkg_subscriber_11_0::pkg_subscriber_11_0_pkg_subscriber_11_0_input_cg_fn_b 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 8 invalid2 25 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 74 pkg_subscriber_11_0::pkg_subscriber_11_0_pkg_subscriber_11_0_input_cg_fn_e 0 74 pkg_subscriber_11_0::pkg_subscriber_11_0_pkg_subscriber_11_0_input_cg_fn_f 0 0 0 0 0
+ 0
+
+ 12 AWADDRxWSTRB 0 27 0 0 0 0 0 2 0 1 -1 0 0 0
+ 0
+ 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 1 1 2 0 0 -1 0 0 1 1 2 ig 28 0 2 0 1 3 1 0 0 1 8 invalid1 0 0 0 0 0 1 0 0 1 8 invalid2 0 0 0 0 0 0 1 0 0 0 0 0
+
 end_coverage_group
 global coverage_group 0 pkg::subscriber::output_cg __coverage_subscriber.output_cg unused_subscriber_output_cg_loop_label pkg 0 1 0 0 0  ( 0 
 )
- 0 9 0 0 0 1 0 0 0 0  1
+ 0 31 0 0 0 1 0 0 0 0  1
 0
 0 0
  0
@@ -69,8 +157,52 @@ global coverage_group 0 pkg::subscriber::output_cg __coverage_subscriber.output_
 0
  0
 
+2
 0
 0
 0
-0
+ 5 bresp 32 0 0 0 0 0 73 pkg_subscriber_11_0::pkg_subscriber_11_0_pkg_subscriber_11_0_output_cg_fn 73 pkg_subscriber_11_0::pkg_subscriber_11_0_pkg_subscriber_11_0_output_cg_fn 0 0 0 0 0 0 75 pkg_subscriber_11_0::pkg_subscriber_11_0_pkg_subscriber_11_0_output_cg_fn_0 0 0 0 -1 0 0 -1 0 0 0 2 2 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 3 1 1 0 0 1 1 4 okay 33 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 75 pkg_subscriber_11_0::pkg_subscriber_11_0_pkg_subscriber_11_0_output_cg_fn_1 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 slverr 34 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 75 pkg_subscriber_11_0::pkg_subscriber_11_0_pkg_subscriber_11_0_output_cg_fn_2 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 decerr 35 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 75 pkg_subscriber_11_0::pkg_subscriber_11_0_pkg_subscriber_11_0_output_cg_fn_3 0 0 0 0 0 0 0
+ 0
+
+ 5 rresp 37 0 0 0 0 0 75 pkg_subscriber_11_0::pkg_subscriber_11_0_pkg_subscriber_11_0_output_cg_fn_4 75 pkg_subscriber_11_0::pkg_subscriber_11_0_pkg_subscriber_11_0_output_cg_fn_4 0 0 0 0 0 0 75 pkg_subscriber_11_0::pkg_subscriber_11_0_pkg_subscriber_11_0_output_cg_fn_5 0 0 0 -1 0 0 -1 0 0 0 2 2 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 3 1 1 0 0 1 1 4 okay 38 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 75 pkg_subscriber_11_0::pkg_subscriber_11_0_pkg_subscriber_11_0_output_cg_fn_1 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 slverr 39 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 75 pkg_subscriber_11_0::pkg_subscriber_11_0_pkg_subscriber_11_0_output_cg_fn_2 0 0 0 0 0 0 0
+ 0
+ 1 1 0 0 1 1 6 decerr 40 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 75 pkg_subscriber_11_0::pkg_subscriber_11_0_pkg_subscriber_11_0_output_cg_fn_3 0 0 0 0 0 0 0
+ 0
+
 end_coverage_group
