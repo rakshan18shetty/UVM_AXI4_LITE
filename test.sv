@@ -29,6 +29,24 @@ class test extends uvm_test;
 	task run();
 		seq=sequences::type_id::create("seq");
 		seq.start(env.act.sqr);
+
+		seq=seq_boundary_addr::type_id::create("seq");
+		seq.start(env.act.sqr);
+
+		seq=seq_ro_wo_region::type_id::create("seq");
+		seq.start(env.act.sqr);
+
+		seq=seq_full_handshake::type_id::create("seq");
+		seq.start(env.act.sqr);
+
+		seq=seq_continuous_write::type_id::create("seq");
+		seq.start(env.act.sqr);
+
+		seq=seq_continuous_read::type_id::create("seq");
+		seq.start(env.act.sqr);
+
+		seq=seq_concurrent_rw::type_id::create("seq");
+		seq.start(env.act.sqr);	
 	endtask
 endclass
 

@@ -57,3 +57,112 @@ class sequences extends uvm_sequence #(my_transaction,my_transaction);
 	endtask
 endclass
 
+
+
+class seq_boundary_addr extends sequences;
+	`uvm_object_utils(seq_boundary_addr)
+	function new(string name="seq_boundary_addr"); 
+		super.new(name);
+	endfunction
+
+	virtual task randomize_req();
+		if(req.randomize() with {
+			AWADDR dist{60:=40,64:=40,[0:63]:/20};
+			ARADDR dist{60:=40,64:=40,[0:63]:/20};
+		})
+			log_req();
+		else
+			`uvm_error("SEQ","SEQ failed");
+	endtask
+endclass
+
+
+class seq_ro_wo_region extends sequences;
+	`uvm_object_utils(seq_ro_wo_region)
+	function new(string name="seq_ro_wo_region");
+		super.new(name);
+        endfunction
+
+	virtual task randomize_req();
+		if(req.randomize() with {
+			AWADDR dist{[40:51]:=50,[0:63]:/50};
+			ARADDR dist{[52:59]:=50,[0:63]:/50};
+		})
+			log_req();
+		else
+			`uvm_error("SEQ","SEQ failed");
+	endtask
+endclass
+
+
+class seq_full_handshake extends sequences;
+	`uvm_object_utils(seq_full_handshake)
+	function new(string name="seq_full_handshake");
+		super.new(name);
+	endfunction
+
+	virtual task randomize_req();
+		if(req.randomize() with{
+			AWVALID==1;WVALID==1;ARVALID==1;
+			BREADY==1; RREADY==1;
+		})
+			log_req();
+		else
+			`uvm_error("SEQ","SEQ failed");
+	endtask
+endclass
+
+class seq_continuous_write extends sequences;
+	`uvm_object_utils(seq_continuous_write)
+	function new(string name="seq_continuous_write");
+		super.new(name);
+	endfunction
+
+	virtual task randomize_req();
+		if(req.randomize() with{
+			AWVALID==1;WVALID==1;
+			ARVALID==0;
+			BREADY==1;
+		})
+			log_req();
+		else
+			`uvm_error("SEQ","SEQ failed");
+	endtask
+endclass
+
+
+class seq_continuous_read extends sequences;
+	`uvm_object_utils(seq_continuous_read)
+	function new(string name="seq_continuous_read");
+		super.new(name);
+	endfunction
+
+	virtual task randomize_req();
+		if(req.randomize() with{
+			ARVALID==1;
+			AWVALID==0;WVALID==0;
+			RREADY==1;
+		})
+			log_req();
+		else
+			`uvm_error("SEQ","SEQ failed");
+	endtask
+endclass
+
+
+class seq_concurrent_rw extends sequences;
+	`uvm_object_utils(seq_concurrent_rw)
+	function new(string name="seq_concurrent_rw");
+		super.new(name);
+	endfunction
+
+	virtual task randomize_req();
+		if(req.randomize() with{
+			AWVALID==1;WVALID==1;ARVALID==1;
+			BREADY==1;RREADY==1;
+		})
+			log_req();
+		else
+			`uvm_error("SEQ","SEQ failed");
+	endtask
+endclass

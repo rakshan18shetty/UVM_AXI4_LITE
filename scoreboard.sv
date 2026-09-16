@@ -110,6 +110,9 @@ class scoreboard extends uvm_scoreboard;
 		end
 	endtask
 
+	
+
+
 	task rd_task(my_transaction tr);
 		if(tr.ARREADY&&tr.ARVALID) begin
 			held.ARADDR=tr.ARADDR;
