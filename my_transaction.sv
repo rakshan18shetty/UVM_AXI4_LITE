@@ -30,8 +30,8 @@ class my_transaction extends uvm_sequence_item;
 		super.new(name);
 	endfunction
 
-	constraint awaddr{AWADDR dist{[0:63]:/100,[64:(2**(`AW)-1)]:/100};}
-	constraint araddr{ARADDR dist{[0:63]:/100,[64:(2**(`AW)-1)]:/100};}
+	constraint awaddr{AWADDR inside {[0:63]}; AWADDR[1:0]==2'b00;}
+	constraint araddr{ARADDR inside {[0:63]}; ARADDR[1:0]==2'b00;}
 
 	`uvm_object_utils_begin(my_transaction)
 		`uvm_field_int(rst,UVM_ALL_ON|UVM_NOCOMPARE)
@@ -58,4 +58,26 @@ class my_transaction extends uvm_sequence_item;
 endclass
 
 
+class out_of_range_addr extends my_transaction;
+	`uvm_object_utils(out_of_range_addr)
+
+	function new(string name="out_of_range_addr");
+		super.new(name);
+	endfunction
+
+	constraint awaddr{AWADDR inside {[64:(2**(`AW)-1)]};}
+	constraint araddr{ARADDR inside {[64:(2**(`AW)-1)]};}
+endclass
+
+
+class unaligned_addr extends my_transaction;
+	`uvm_object_utils(unaligned_addr)
+
+	function new(string name="unaligned_addr");
+		super.new(name);
+	endfunction
+
+	constraint awaddr{AWADDR inside {[0:63]};AWADDR[1:0]!=2'b00;}
+	constraint araddr{ARADDR inside {[0:63]};ARADDR[1:0]!=2'b00;}
+endclass
 
