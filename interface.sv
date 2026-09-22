@@ -37,6 +37,14 @@ interface my_if(input logic clk,input logic rst);
 
 	modport DRV(clocking cb_drv);
 	modport MON(clocking cb_mon);
-
+	
+	check_reset:assert property (@(posedge clk) !rst |-> ({AWREADY, WREADY, BVALID, BRESP, ARREADY, RVALID, RDATA, RRESP} == 0));
+	check_async_reset:assert property (@(negedge clk) !rst |-> ({AWREADY, WREADY, BVALID, BRESP, ARREADY, RVALID, RDATA, RRESP} == 0));
+	check_bvalid:assert property (@(posedge clk) disable iff (!rst) (BVALID && !BREADY) |=> BVALID);
+	check_bresp:assert property (@(posedge clk) disable iff (!rst) (BVALID && !BREADY) |=> ($stable(BRESP)));
+	check_rvalid:assert property (@(posedge clk) disable iff (!rst) (RVALID && !RREADY) |=> RVALID);
+	check_rdata:assert property (@(posedge clk) disable iff (!rst) (RVALID && !RREADY) |=> ($stable(RDATA)));
+	check_rresp:assert property (@(posedge clk) disable iff (!rst) (RVALID && !RREADY) |=> ($stable(RRESP)));	
+	
 endinterface
 

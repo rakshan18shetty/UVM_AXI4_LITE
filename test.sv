@@ -46,23 +46,23 @@ class test extends uvm_test;
 			begin
 				wr_simul=write_simul_seq::type_id::create("wr_simul");
 				wr_simul.start(env.act.sqr);
-			end
+			end 
 			begin
 				rd_a=read_only_seq::type_id::create("rd_a");
 				rd_a.start(env.act.sqr);
-			end
+			end 
 			begin
 				aw_w=write_aw_then_w_seq::type_id::create("aw_w");
 				aw_w.start(env.act.sqr);
-			end
+			end 
 			begin
 				rd_b=read_only_seq::type_id::create("rd_b");
 				rd_b.start(env.act.sqr);
-			end
+			end 
 			begin
 				w_aw=write_w_then_aw_seq::type_id::create("w_aw");
 				w_aw.start(env.act.sqr);
-			end
+			end 
 			begin
 				rd_c=read_only_seq::type_id::create("rd_c");
 				rd_c.start(env.act.sqr);
@@ -74,7 +74,7 @@ class test extends uvm_test;
 			begin
 				seq=sequences::type_id::create("seq");
 				seq.start(env.act.sqr);
-			end
+			end 
 		join
 	endtask
 endclass
