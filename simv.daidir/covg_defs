@@ -34,7 +34,7 @@ global coverage_group 0 pkg::subscriber::input_cg __coverage_subscriber.input_cg
 
 3
 0
-1
+0
 0
  6 awaddr 8 0 0 0 0 0 72 pkg_subscriber_11_0::pkg_subscriber_11_0_pkg_subscriber_11_0_input_cg_fn 72 pkg_subscriber_11_0::pkg_subscriber_11_0_pkg_subscriber_11_0_input_cg_fn 0 0 0 75 pkg_subscriber_11_0::pkg_subscriber_11_0_pkg_subscriber_11_0_input_cg_fn_1a 0 0 74 pkg_subscriber_11_0::pkg_subscriber_11_0_pkg_subscriber_11_0_input_cg_fn_0 0 0 0 -1 0 0 -1 0 0 0 2 32 0 0 1 0 0 0
  0
@@ -109,20 +109,6 @@ global coverage_group 0 pkg::subscriber::input_cg __coverage_subscriber.input_cg
  0
  1 1 0 0 1 1 8 invalid2 25 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 74 pkg_subscriber_11_0::pkg_subscriber_11_0_pkg_subscriber_11_0_input_cg_fn_e 0 74 pkg_subscriber_11_0::pkg_subscriber_11_0_pkg_subscriber_11_0_input_cg_fn_f 0 0 0 0 0
  0
-
- 12 AWADDRxWSTRB 0 27 0 0 0 0 0 2 0 1 -1 0 0 0
- 0
- 0
- 0
- 0 0
- 0 0
- 0
- 0
- 0
- 0
- 0
- 0
- 1 1 2 0 0 -1 0 0 1 1 2 ig 28 0 2 0 1 3 1 0 0 1 8 invalid1 0 0 0 0 0 1 0 0 1 8 invalid2 0 0 0 0 0 0 1 0 0 0 0 0
 
 end_coverage_group
 global coverage_group 0 pkg::subscriber::output_cg __coverage_subscriber.output_cg unused_subscriber_output_cg_loop_label pkg 0 1 0 0 0  ( 0 

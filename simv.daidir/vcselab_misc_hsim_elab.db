@@ -1,5 +1,5 @@
 psSimBaseName                      	simv
-psLogFileName                      	fell.log
+psLogFileName                      	compile.log
 pDaiDir                            	/fetools/work_area/frontend/Batch_11/rakshanshetty/systemverilog/UVM_AXI4_LITE/simv.daidir
 destPath                           	csrc/
 fSharedMaster                      	0
@@ -359,7 +359,7 @@ fVpdDeltaCycleInDesign             	0
 fHsimAllowVecGateInVpd             	1
 fHsimAllowAllVecGateInVpd          	0
 fHsimAllowUdpInVpd                 	1
-fHsimAllowAlwaysCombInVpd          	1
+fHsimAllowAlwaysCombInVpd          	0
 fHsimAllowAlwaysCombCmpDvcSimv     	0
 fHsimAllowAlwaysCombDbg            	0
 fHsimMakeAllP2SPrimary             	0
@@ -389,7 +389,7 @@ fVpdRtlForPartCompDiag             	0
 fConstInExprofVpdTable             	0
 fRaptorProf                        	0
 fHsimVpdOptGateMustDisable         	0
-fHsimVpdOptGate                    	1
+fHsimVpdOptGate                    	0
 fHsimVpdOptDelay                   	0
 fHsimVpdOptMPDelay                 	0
 fHsimVpdOptDiag                    	0
@@ -612,7 +612,7 @@ fHsimMdbPartInputLimit             	1
 fHsimSdfData                       	0
 fHsimDesignHasSdfAnnotation        	0
 fHsimDesignUsesParallelVcs         	0
-fHsimCMEnabled                     	0
+fHsimCMEnabled                     	1
 fHsimNotDelRefData                 	0
 fGblPulsePartCtrl                  	0
 fGblMSah                           	0
@@ -831,7 +831,7 @@ fHsimMdbNewDebugOptExitOnError     	1
 fHsimNewDebugOptMemDiag            	0
 hsGlobalVerboseLevel               	0
 fHsimMdbVectorConstProp            	1
-fHsimEnableSeqUdpWrite             	1
+fHsimEnableSeqUdpWrite             	0
 fHsimDumpMDBOnlyForSeqUdp          	0
 fHsimInitRegRandom                 	0
 fHsimInitRegRandomVcs              	1
@@ -918,7 +918,7 @@ fHsimDumpMdbPruneVpdGates          	0
 fHsimGates1209                     	0
 fHsimCgRtlNoShareSmd               	0
 fHsimGenForErSum                   	0
-fVpdOpt                            	1
+fVpdOpt                            	0
 fHsimMdbCell                       	0
 fHsimCellDebug                     	0
 fHsimMdbCellComplexity             	1.500000
@@ -945,9 +945,9 @@ fHsimVpdGateOnlyFlag               	1
 fHsimMxConnFrc                     	0
 fHsimNewForceCbkVec                	0
 fHsimNewForceCbkVecDiag            	0
-fHsimMdbReplaceVpdHighConn         	1
+fHsimMdbReplaceVpdHighConn         	0
 fHsimVpdHighConnReplaced           	0
-fHsimVpdOptSVTypes                 	1
+fHsimVpdOptSVTypes                 	0
 fHsimDlyInitFrc                    	0
 fHsimCompactVpdFn                  	1
 fHsimPIP                           	0
@@ -988,7 +988,7 @@ fHsimVpdOptMdbCell                 	0
 fHsimVpdOptPartialMdb              	1
 fHsimVpdOptPartitionGate           	1
 fHsimVpdOptPartitionGateCompress   	0
-fHsimVpdOptXmr                     	1
+fHsimVpdOptXmr                     	0
 fHsimVpdOptConst                   	1
 fHsimVpdOptMoreLevels              	1
 fHsimVpdHilRtl                     	0
@@ -1081,7 +1081,7 @@ fHsimSortLayout                    	0
 fHsimIslandLayout                  	0
 fHsimConfigSched0                  	0
 fHsimSelectFuseAfterDfuse          	0
-vcsNettypeDbgOpt                   	4
+vcsNettypeDbgOpt                   	0
 fHsimFoldedCell                    	0
 fHsimSimon2Mdb                     	0
 fHsimSWaveEmul                     	0
@@ -1348,6 +1348,6 @@ fFgpDynelabFix                     	1
 fFgpEdgeSanity                     	0
 fHsimCongruencyConfigFile          	0
 fHsimCongruencyLogFile             	0
-fHsimCoverageEnabled               	0
-fHsimCoverageOptions               	0
-fHsimCoverageDir                   	NULL
+fHsimCoverageEnabled               	1
+fHsimCoverageOptions               	407
+fHsimCoverageDir                   	simv.vdb

@@ -81,3 +81,41 @@
   CREATE_STREAM @0 {NAME:rd_c T:Transactions SCOPE:uvm_test_top.env.act.sqr STREAM:723}
   CREATE_STREAM @0 {NAME:wr_rd T:Transactions SCOPE:uvm_test_top.env.act.sqr STREAM:731}
   CREATE_STREAM @0 {NAME:seq T:Transactions SCOPE:uvm_test_top.env.act.sqr STREAM:739}
+  CREATE_STREAM @0 {NAME:wr_simul T:Transactions SCOPE:uvm_test_top.env.act.sqr STREAM:686}
+  CREATE_STREAM @0 {NAME:rd_a T:Transactions SCOPE:uvm_test_top.env.act.sqr STREAM:695}
+  CREATE_STREAM @0 {NAME:aw_w T:Transactions SCOPE:uvm_test_top.env.act.sqr STREAM:703}
+  CREATE_STREAM @0 {NAME:rd_b T:Transactions SCOPE:uvm_test_top.env.act.sqr STREAM:711}
+  CREATE_STREAM @0 {NAME:w_aw T:Transactions SCOPE:uvm_test_top.env.act.sqr STREAM:719}
+  CREATE_STREAM @0 {NAME:rd_c T:Transactions SCOPE:uvm_test_top.env.act.sqr STREAM:727}
+  CREATE_STREAM @0 {NAME:wr_rd T:Transactions SCOPE:uvm_test_top.env.act.sqr STREAM:735}
+  CREATE_STREAM @0 {NAME:seq T:Transactions SCOPE:uvm_test_top.env.act.sqr STREAM:743}
+  CREATE_STREAM @0 {NAME:wr_simul T:Transactions SCOPE:uvm_test_top.env.act.sqr STREAM:686}
+  CREATE_STREAM @0 {NAME:wr_simul T:Transactions SCOPE:uvm_test_top.env.act.sqr STREAM:686}
+  CREATE_STREAM @0 {NAME:wr_simul T:Transactions SCOPE:uvm_test_top.env.act.sqr STREAM:686}
+  CREATE_STREAM @0 {NAME:seq T:Transactions SCOPE:uvm_test_top.env.act.sqr STREAM:686}
+  CREATE_STREAM @0 {NAME:rd_a T:Transactions SCOPE:uvm_test_top.env.act.sqr STREAM:695}
+  CREATE_STREAM @0 {NAME:rd_b T:Transactions SCOPE:uvm_test_top.env.act.sqr STREAM:703}
+  CREATE_STREAM @0 {NAME:rd_c T:Transactions SCOPE:uvm_test_top.env.act.sqr STREAM:711}
+  CREATE_STREAM @0 {NAME:wr_simul T:Transactions SCOPE:uvm_test_top.env.act.sqr STREAM:719}
+  CREATE_STREAM @0 {NAME:wr_rd T:Transactions SCOPE:uvm_test_top.env.act.sqr STREAM:727}
+  CREATE_STREAM @0 {NAME:aw_w T:Transactions SCOPE:uvm_test_top.env.act.sqr STREAM:735}
+  CREATE_STREAM @0 {NAME:w_aw T:Transactions SCOPE:uvm_test_top.env.act.sqr STREAM:743}
+  CREATE_STREAM @0 {NAME:bp T:Transactions SCOPE:uvm_test_top.env.act.sqr STREAM:751}
+  CREATE_STREAM @0 {NAME:seq T:Transactions SCOPE:uvm_test_top.env.act.sqr STREAM:691}
+  CREATE_STREAM @0 {NAME:rd_a T:Transactions SCOPE:uvm_test_top.env.act.sqr STREAM:700}
+  CREATE_STREAM @0 {NAME:rd_b T:Transactions SCOPE:uvm_test_top.env.act.sqr STREAM:708}
+  CREATE_STREAM @0 {NAME:rd_c T:Transactions SCOPE:uvm_test_top.env.act.sqr STREAM:716}
+  CREATE_STREAM @0 {NAME:wr_simul T:Transactions SCOPE:uvm_test_top.env.act.sqr STREAM:724}
+  CREATE_STREAM @0 {NAME:wr_rd T:Transactions SCOPE:uvm_test_top.env.act.sqr STREAM:732}
+  CREATE_STREAM @0 {NAME:aw_w T:Transactions SCOPE:uvm_test_top.env.act.sqr STREAM:740}
+  CREATE_STREAM @0 {NAME:w_aw T:Transactions SCOPE:uvm_test_top.env.act.sqr STREAM:748}
+  CREATE_STREAM @0 {NAME:bp T:Transactions SCOPE:uvm_test_top.env.act.sqr STREAM:756}
+  CREATE_STREAM @0 {NAME:seq T:Transactions SCOPE:uvm_test_top.env.act.sqr STREAM:691}
+  CREATE_STREAM @0 {NAME:rd_a T:Transactions SCOPE:uvm_test_top.env.act.sqr STREAM:700}
+  CREATE_STREAM @0 {NAME:rd_b T:Transactions SCOPE:uvm_test_top.env.act.sqr STREAM:708}
+  CREATE_STREAM @0 {NAME:rd_c T:Transactions SCOPE:uvm_test_top.env.act.sqr STREAM:716}
+  CREATE_STREAM @0 {NAME:wr_simul T:Transactions SCOPE:uvm_test_top.env.act.sqr STREAM:724}
+  CREATE_STREAM @0 {NAME:wr_rd T:Transactions SCOPE:uvm_test_top.env.act.sqr STREAM:732}
+  CREATE_STREAM @0 {NAME:aw_w T:Transactions SCOPE:uvm_test_top.env.act.sqr STREAM:740}
+  CREATE_STREAM @0 {NAME:w_aw T:Transactions SCOPE:uvm_test_top.env.act.sqr STREAM:748}
+  CREATE_STREAM @0 {NAME:bp T:Transactions SCOPE:uvm_test_top.env.act.sqr STREAM:756}

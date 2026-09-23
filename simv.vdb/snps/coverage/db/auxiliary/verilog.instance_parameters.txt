@@ -1,0 +1,5 @@
+top.m1.W_ADDR2
+top.m1.W_BOTH1
+top.m1.W_DATA3
+top.m1.W_IDLE0
+top.m1.W_RESP4

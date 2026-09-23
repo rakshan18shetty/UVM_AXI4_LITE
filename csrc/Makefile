@@ -19,8 +19,9 @@ PRODUCT_TIMESTAMP=product_timestamp
 # Path to runtime library
 DEPLIBS=
 VCSUCLI=-lvcsucli
+BALIBS= 
 LLVM_FLAGS=
-RUNTIME=-lvcsnew -lsimprofile -luclinative /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/linux64/lib/vcs_tls.o $(DEPLIBS) 
+RUNTIME=-lvcsnew -lsimprofile -lreader_common /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/linux64/lib/libBA.a -luclinative /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/linux64/lib/vcs_tls.o $(DEPLIBS) 
 
 VCS_SAVE_RESTORE_OBJ=/fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/linux64/lib/vcs_save_restore_new.o
 
@@ -48,7 +49,7 @@ CRT0=
 # C run time startup
 CRTN=
 # Machine specific libraries
-SYSLIBS=/fetools/synopsys/installed_tools/verdi/verdi/Q-2020.03-SP2-8/share/PLI/VCS/LINUX64/pli.a -ldl  -lc -lm -lpthread -ldl
+SYSLIBS=-ldl  -lc -lm -lpthread -ldl
 
 # Default defines
 SHELL=/bin/sh
@@ -113,6 +114,6 @@ $(PRODUCT_TIMESTAMP) : product_clean_order
 	@touch $(PRODUCT_TIMESTAMP)
 	@-if [ -d ./objs ]; then find ./objs -type d -empty -delete; fi
 
-$(PRODUCT) :  $(LD_VERSION_CHECK)  $(OBJS) $(DOTLIBS) $(DPI_STUB_OBJS) $(PLI_STUB_OBJS) $(CMODLIB)  /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/linux64/lib/libvcsnew.so /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/linux64/lib/libsimprofile.so /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/linux64/lib/libuclinative.so /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/linux64/lib/vcs_tls.o /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/linux64/lib/libvcsucli.so  $(VCS_SAVE_RESTORE_OBJ) 
+$(PRODUCT) :  $(LD_VERSION_CHECK)  $(OBJS) $(DOTLIBS) $(DPI_STUB_OBJS) $(PLI_STUB_OBJS) $(CMODLIB)  /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/linux64/lib/libvcsnew.so /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/linux64/lib/libsimprofile.so /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/linux64/lib/libreader_common.so /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/linux64/lib/libBA.a /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/linux64/lib/libuclinative.so /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/linux64/lib/vcs_tls.o /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/linux64/lib/libvcsucli.so  $(VCS_SAVE_RESTORE_OBJ) 
 	@touch $(PRODUCT)
 

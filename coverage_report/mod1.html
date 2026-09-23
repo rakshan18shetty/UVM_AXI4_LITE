@@ -1,0 +1,2274 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Author" content="<username>"> <meta name="GENERATOR" content="urg/version [en] (platform name) [urg]">
+<title>Unified Coverage Report :: Module :: axi4_lite_slave</title>
+<link type="text/css" rel="stylesheet" href="css/.urg.css">
+<link type="text/css" rel="stylesheet" href="css/.layout.css">
+<link type="text/css" rel="stylesheet" href="css/.breadcrumb.css">
+<script type="text/javascript" src="js/.jquery.js"></script>
+<script type="text/javascript" src="js/.jquery-ui.js"></script>
+<script type="text/javascript" src="js/.sortable.js"></script>
+<script type="text/javascript" src="js/.layout.js"></script>
+<script type="text/javascript" src="js/.breadcrumb.js"></script>
+<script type="text/javascript">
+var layout, westLayout, centerLayout;
+$(document).ready(function () {
+  if ($("#north-bread-crumb")) {
+    $("#north-bread-crumb").jBreadCrumb({easing:'swing'})
+  }
+  layout = $("body").layout({ 
+    resizable: true,
+    spacing_open: 4,
+    spacing_closed: 4,
+    north: {
+      size: 76
+    },
+    south: {
+      size: 45,
+      initClosed: true
+    },
+    west: {
+      size: 500,
+      resizable: true,
+      initClosed: false
+    }
+  });
+  centerLayout = $('div.ui-layout-center').layout({
+    north__paneSelector: ".ui-layout-center-inner-north",
+    center__paneSelector: ".ui-layout-center-inner-center", 
+    north__size: 50,
+    spacing_open: 4,
+    spacing_closed: 4
+  });
+});
+</script>
+</head>
+<body onLoad="initPage();"><div class="ui-layout-north">
+<div class="logo"></div>
+<center class="pagetitle">Module Definition</center>
+<div align="center"><a href="dashboard.html" ><b>dashboard</b></a> | <a href="hierarchy.html" ><b>hierarchy</b></a> | <a href="modlist.html" ><b>modlist</b></a> | <a href="groups.html" ><b>groups</b></a> | <a href="tests.html" ><b>tests</b></a> | <a href="asserts.html" ><b>asserts</b></a></div>
+
+</div>
+<div class="ui-layout-west">
+<div name='tag_axi4_lite_slave'>
+<div class=modhdr>
+<br clear=all>
+<span class=titlename>Module : <a href="#"  onclick="showContent('tag_axi4_lite_slave')">axi4_lite_slave</a></span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td>ASSERT</td></tr><tr>
+<td class="s8 cl rt"> 87.90</td>
+<td class="s9 cl rt"><a href="mod1.html#Line" > 98.25</a></td>
+<td class="s8 cl rt"><a href="mod1.html#Cond" > 84.00</a></td>
+<td class="s9 cl rt"><a href="mod1.html#Toggle" > 94.16</a></td>
+<td class="s7 cl rt"><a href="mod1.html#FSM" > 70.00</a></td>
+<td class="s9 cl rt"><a href="mod1.html#Branch" > 93.10</a></td>
+<td class="wht cl rt"></td>
+</tr></table><br clear=all>
+<span class=repname>Source File(s) : </span>
+<br clear=all>
+<a href="javascript:void(0);"  onclick="openSrcFile('/fetools/work_area/frontend/Batch_11/rakshanshetty/systemverilog/UVM_AXI4_LITE/DUT.sv')">/fetools/work_area/frontend/Batch_11/rakshanshetty/systemverilog/UVM_AXI4_LITE/DUT.sv</a><br clear=all>
+<br clear=all>
+<span class=repname>Module self-instances :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td>ASSERT</td></tr><tr>
+<td class="wht cl wordwrap"><a href="mod1.html#inst_tag_1"  onclick="showContent('inst_tag_1')">top.m1</a></td>
+<td class="s8 cl rt"> 87.90</td>
+<td class="s9 cl rt"><a href="mod1.html#Line" > 98.25</a></td>
+<td class="s8 cl rt"><a href="mod1.html#Cond" > 84.00</a></td>
+<td class="s9 cl rt"><a href="mod1.html#Toggle" > 94.16</a></td>
+<td class="s7 cl rt"><a href="mod1.html#FSM" > 70.00</a></td>
+<td class="s9 cl rt"><a href="mod1.html#Branch" > 93.10</a></td>
+<td class="wht cl rt"></td>
+</tr></table></div>
+</div>
+<br clear=all>
+<div name='tag_axi4_lite_slave'>
+<hr>
+<a name="inst_tag_1"></a>
+<div class=modhdr>
+<br clear=all>
+<span class=titlename>Module Instance : <a href="hierarchy.html#tag_urg_inst_1" >top.m1</a></span>
+<br clear=all>
+<br clear=all>
+<span class=repname>Instance :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td>ASSERT</td></tr><tr>
+<td class="s8 cl rt"> 87.90</td>
+<td class="s9 cl rt"><a href="mod1.html#Line" > 98.25</a></td>
+<td class="s8 cl rt"><a href="mod1.html#Cond" > 84.00</a></td>
+<td class="s9 cl rt"><a href="mod1.html#Toggle" > 94.16</a></td>
+<td class="s7 cl rt"><a href="mod1.html#FSM" > 70.00</a></td>
+<td class="s9 cl rt"><a href="mod1.html#Branch" > 93.10</a></td>
+<td class="wht cl rt"></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Instance's subtree :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td>ASSERT</td></tr><tr>
+<td class="s8 cl rt"> 87.90</td>
+<td class="s9 cl rt"> 98.25</td>
+<td class="s8 cl rt"> 84.00</td>
+<td class="s9 cl rt"> 94.16</td>
+<td class="s7 cl rt"> 70.00</td>
+<td class="s9 cl rt"> 93.10</td>
+<td class="wht cl rt"></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Parent : </span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td>ASSERT</td><td class="alfsrt">NAME</td></tr><tr>
+<td class="s10 cl rt">100.00</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td><a href="mod4.html#inst_tag_4" >top</a></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Subtrees :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td>ASSERT</td></tr><tr>
+<td colspan=8>no children</td>
+</tr></table><br clear=all>
+</div>
+</div>
+<hr>
+Since this is the module's only instance, the coverage report is the same as for the module.</div>
+<div class="ui-layout-center">
+<div class="ui-layout-center-inner-center">
+<div name='tag_axi4_lite_slave'>
+<a name="Line"></a>
+Line Coverage for Module : <a href="mod1.html" >axi4_lite_slave</a><br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="4" width="82">
+<tr><th></th><th>Line No.</th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s9"><td class="lf">TOTAL</td><td></td><td>114</td><td>112</td><td>98.25</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>78</td><td>18</td><td>18</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>108</td><td>3</td><td>3</td><td>100.00</td></tr>
+<tr class="s9"><td class="lf">ALWAYS</td><td>114</td><td>17</td><td>16</td><td>94.12</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>132</td><td>41</td><td>41</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>216</td><td>3</td><td>3</td><td>100.00</td></tr>
+<tr class="s8"><td class="lf">ALWAYS</td><td>222</td><td>7</td><td>6</td><td>85.71</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>233</td><td>25</td><td>25</td><td>100.00</td></tr>
+</table>
+<pre class="code"><br clear=all>
+77                      always @(posedge ACLK or negedge ARESETn) begin
+78         1/1              if (!ARESETn) begin
+79         1/1                  aw_done     &lt;= 1'b0;
+80         1/1                  w_done      &lt;= 1'b0;
+81         1/1                  wr_addr_lat &lt;= {ADDR_WIDTH{1'b0}};
+82         1/1                  wr_data_lat &lt;= {DATA_WIDTH{1'b0}};
+83         1/1                  wr_strb_lat &lt;= {(DATA_WIDTH/8){1'b0}};
+84                      
+85         1/1                  wr_prot_lat &lt;= 3'b000;
+86                          end else begin
+87         1/1                  if (wr_state == W_RESP &amp;&amp; BVALID &amp;&amp; BREADY) begin
+88         1/1                      aw_done &lt;= 1'b0;
+89         1/1                      w_done  &lt;= 1'b0;
+90                              end
+91                      
+92         1/1                 else if (AWVALID &amp;&amp; AWREADY) begin
+93         1/1                      aw_done     &lt;= 1'b1;
+94         1/1                      wr_addr_lat &lt;= AWADDR;
+95         1/1                      wr_prot_lat &lt;= AWPROT;
+96                      
+97                              end
+98         1/1                 else if (WVALID &amp;&amp; WREADY) begin
+99         1/1                      w_done      &lt;= 1'b1;
+100        1/1                      wr_data_lat &lt;= WDATA;
+101        1/1                      wr_strb_lat &lt;= WSTRB;
+102                             end
+                        MISSING_ELSE
+103                         end
+104                     end
+105                     
+106                     
+107                     always @(posedge ACLK or negedge ARESETn) begin
+108        2/2              if (!ARESETn) wr_state &lt;= W_IDLE;
+109        1/1              else          wr_state &lt;= n_wr_state;
+110                     end
+111                     
+112                     
+113                     always @(*) begin
+114        1/1              n_wr_state = wr_state;
+115        1/1              case (wr_state)
+116        2/2                  W_IDLE: if (AWVALID || WVALID) n_wr_state = W_BOTH;
+                        MISSING_ELSE
+117                             W_BOTH: begin
+118        1/1                      if ((aw_done || (AWVALID &amp;&amp; AWREADY)) &amp;&amp;
+119        1/1                          (w_done  || (WVALID  &amp;&amp; WREADY ))) n_wr_state = W_RESP;
+120        2/2                      else if (aw_done || (AWVALID &amp;&amp; AWREADY)) n_wr_state = W_DATA;
+121        2/2                      else if (w_done  || (WVALID  &amp;&amp; WREADY))  n_wr_state = W_ADDR;
+                        MISSING_ELSE
+122                             end
+123        2/2                  W_ADDR: if (AWVALID &amp;&amp; AWREADY) n_wr_state = W_RESP;
+                        MISSING_ELSE
+124        2/2                  W_DATA: if (WVALID  &amp;&amp; WREADY)  n_wr_state = W_RESP;
+                        MISSING_ELSE
+125        2/2                  W_RESP: if (BVALID  &amp;&amp; BREADY)  n_wr_state = W_IDLE;
+                        MISSING_ELSE
+126        <font color = "red">0/1     ==>          default:                        n_wr_state = W_IDLE;</font>
+127                         endcase
+128                     end
+129                     
+130                     
+131                     always @(posedge ACLK or negedge ARESETn) begin
+132        1/1              if (!ARESETn) begin
+133        1/1                  AWREADY &lt;= 1'b0;
+134        1/1                  WREADY  &lt;= 1'b0;
+135        1/1                  BVALID  &lt;= 1'b0;
+136        1/1                  BRESP   &lt;= RESP_OKAY;
+137        1/1                  for (i = 0; i &lt; MEM_DEPTH; i = i + 1)
+138        1/1                      reg_file[i] &lt;= {DATA_WIDTH{1'b0}};
+139                         end else begin
+140        1/1                  case (wr_state)
+141                                 W_IDLE: begin
+142        1/1                          AWREADY &lt;= 1'b1;
+143        1/1                          WREADY  &lt;= 1'b1;
+144        1/1                          BVALID  &lt;= 1'b0;
+145                                 end
+146                                 W_BOTH: begin
+147        1/1                          if (aw_done || (AWVALID &amp;&amp; AWREADY))
+148        1/1                               AWREADY &lt;= 1'b0;
+                        MISSING_ELSE
+149        2/2                          if (w_done  || (WVALID  &amp;&amp; WREADY ))  WREADY  &lt;= 1'b0;
+                        MISSING_ELSE
+150                                 end
+151                                 W_ADDR: begin
+152        1/1                          AWREADY &lt;= 1'b1;
+153        2/2                          if (AWVALID &amp;&amp; AWREADY) AWREADY &lt;= 1'b0;
+                        MISSING_ELSE
+154                                 end
+155                                 W_DATA: begin
+156        1/1                          WREADY &lt;= 1'b1;
+157        2/2                          if (WVALID &amp;&amp; WREADY) WREADY &lt;= 1'b0;
+                        MISSING_ELSE
+158                                 end
+159                                 W_RESP: begin
+160        1/1                          if (!BVALID) begin
+161        1/1                              if (!wr_addr_ok) begin
+162        1/1                                  BRESP  &lt;= RESP_DECERR;
+163        1/1                                  reg_file[AWADDR[$clog2(MEM_DEPTH)+1:2]] &lt;= 0;
+164        1/1                              end else if (wr_addr_ro || wr_addr_unaligned) begin
+165        1/1                                  BRESP  &lt;= RESP_SLVERR;
+166        1/1                                  reg_file[AWADDR[$clog2(MEM_DEPTH)+1:2]] &lt;= 0;
+167                                         end else begin
+168        2/2                                  if (wr_strb_lat[0]) reg_file[wr_addr_lat[$clog2(MEM_DEPTH)+1:2]][ 7: 0] &lt;= wr_data_lat[ 7: 0];
+                        MISSING_ELSE
+169        2/2                                  if (wr_strb_lat[1]) reg_file[wr_addr_lat[$clog2(MEM_DEPTH)+1:2]][15: 8] &lt;= wr_data_lat[15: 8];
+                        MISSING_ELSE
+170        2/2                                  if (wr_strb_lat[2]) reg_file[wr_addr_lat[$clog2(MEM_DEPTH)+1:2]][23:16] &lt;= wr_data_lat[23:16];
+                        MISSING_ELSE
+171        2/2                                  if (wr_strb_lat[3]) reg_file[wr_addr_lat[$clog2(MEM_DEPTH)+1:2]][31:24] &lt;= wr_data_lat[31:24];
+                        MISSING_ELSE
+172        1/1                                  BRESP  &lt;= RESP_OKAY;
+173                                         end
+174        1/1                              BVALID &lt;= 1'b1;
+175                                     end
+176        2/2                         else if (BVALID &amp;&amp; BREADY) BVALID &lt;= 1'b0;
+177                                     else begin
+178        1/1                              reg_file[AWADDR[$clog2(MEM_DEPTH)+1:2]] &lt;= reg_file[AWADDR[$clog2(MEM_DEPTH)+1:2]];
+179                                       // BVALID &lt;= BVALID;
+180                     //                   reg_file[wr_addr_lat[$clog2(MEM_DEPTH)+1:2]][ 7: 0] &lt;= reg_file[wr_addr_lat[$clog2(MEM_DEPTH)+1:2]][ 7: 0];
+181                     //                   reg_file[wr_addr_lat[$clog2(MEM_DEPTH)+1:2]][15: 8] &lt;= reg_file[wr_addr_lat[$clog2(MEM_DEPTH)+1:2]][15: 8];
+182                     //                   reg_file[wr_addr_lat[$clog2(MEM_DEPTH)+1:2]][23:16] &lt;= reg_file[wr_addr_lat[$clog2(MEM_DEPTH)+1:2]][23:16];
+183                     //                   reg_file[wr_addr_lat[$clog2(MEM_DEPTH)+1:2]][31:24] &lt;= reg_file[wr_addr_lat[$clog2(MEM_DEPTH)+1:2]][31:24];
+184                                        //BRESP &lt;= BRESP;
+185                                     end
+186                                 end
+                   <font color = "red">==>  MISSING_DEFAULT</font>
+187                             endcase
+188                         end
+189                     end
+190                     
+191                     
+192                     localparam
+193                         R_IDLE = 1'd0,
+194                         R_DATA = 1'd1;
+195                     
+196                     reg  rd_state, n_rd_state;
+197                     reg [ADDR_WIDTH-1:0] rd_addr_lat;
+198                     reg [2:0]            rd_prot_lat;
+199                     
+200                     
+201                     wire [$clog2(MEM_DEPTH)-1:0] rd_word_idx = rd_addr_lat[$clog2(MEM_DEPTH)+1:2];
+202                     
+203                     wire [$clog2(MEM_DEPTH)-1:0] rd_word_addr;
+204                     assign rd_word_addr = ARADDR[2 + $clog2(MEM_DEPTH)-1 : 2];
+205                     
+206                     wire rd_addr_unaligned;
+207                     assign rd_addr_unaligned = |ARADDR[1:0];
+208                     
+209                     wire rd_addr_ok;
+210                     assign rd_addr_ok = (rd_word_addr &lt; MEM_DEPTH) &amp;&amp; (ARADDR &lt; (MEM_DEPTH * 4));
+211                     
+212                     wire rd_addr_wo;
+213                     assign rd_addr_wo = (rd_word_addr &gt;= 13) &amp;&amp; (rd_word_addr &lt;= 14);
+214                     
+215                     always @(posedge ACLK or negedge ARESETn) begin
+216        2/2              if (!ARESETn) rd_state &lt;= R_IDLE;
+217        1/1              else          rd_state &lt;= n_rd_state;
+218                     end
+219                     
+220                     
+221                     always @(*) begin
+222        1/1              n_rd_state = rd_state;
+223                     
+224        1/1              case (rd_state)
+225        2/2                  R_IDLE:  if (ARVALID &amp;&amp; ARREADY)   n_rd_state = R_DATA;
+                        MISSING_ELSE
+226        2/2                  R_DATA:  if (RVALID &amp;&amp; RREADY)     n_rd_state = R_IDLE;
+                        MISSING_ELSE
+227        <font color = "red">0/1     ==>          default:                           n_rd_state = R_IDLE;</font>
+228                         endcase
+229                     end
+230                     
+231                     
+232                     always @(posedge ACLK or negedge ARESETn) begin
+233        1/1              if (!ARESETn) begin
+234        1/1                  ARREADY     &lt;= 1'b0;
+235        1/1                  RVALID      &lt;= 1'b0;
+236        1/1                  RDATA       &lt;= {DATA_WIDTH{1'b0}};
+237        1/1                  RRESP       &lt;= RESP_OKAY;
+238        1/1                  rd_addr_lat &lt;= {ADDR_WIDTH{1'b0}};
+239        1/1                  rd_prot_lat &lt;= 3'b000;
+240                         end else begin
+241        1/1                  case (rd_state)
+242                     
+243                                 R_IDLE: begin
+244        1/1                          ARREADY &lt;= 1'b1;
+245        1/1                          RVALID  &lt;= 1'b0;
+246                     
+247        1/1                          if (ARVALID &amp;&amp; ARREADY) begin
+248        1/1                              rd_addr_lat &lt;= ARADDR;
+249        1/1                              rd_prot_lat &lt;= ARPROT;
+250                     
+251                     
+252        1/1                              if (!rd_addr_ok)begin
+253        1/1                                  RRESP &lt;= RESP_DECERR;
+254        1/1                                  RDATA &lt;= 0;
+255                                         end
+256        1/1                              else if (rd_addr_wo || rd_addr_unaligned) begin
+257        1/1                                  RRESP &lt;= RESP_SLVERR;
+258        1/1                                  RDATA &lt;= 0;
+259                                         end
+260                                         else begin
+261        1/1                                  RRESP &lt;= RESP_OKAY;
+262        1/1                                  RDATA &lt;= reg_file[ARADDR[$clog2(MEM_DEPTH)+1:2]];
+263                                             
+264                                         end
+265        1/1                              RVALID &lt;= 1'b1;
+266        1/1                              ARREADY &lt;= 1'b0;
+267                                     end
+                        MISSING_ELSE
+268                                 end
+269                     
+270                     
+271                                 R_DATA: begin
+272        1/1                          if (RVALID &amp;&amp; RREADY)
+273        1/1                              RVALID &lt;= 1'b0;
+                        MISSING_ELSE
+274                                 end
+                   <font color = "red">==>  MISSING_DEFAULT</font>
+</pre>
+<hr>
+<a name="Cond"></a>
+Cond Coverage for Module : <a href="mod1.html" >axi4_lite_slave</a><br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="3" width="82">
+<tr><th></th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s8"><td class="lf">Conditions</td><td>100</td><td>84</td><td>84.00</td></tr>
+<tr class="s8"><td class="lf">Logical</td><td>100</td><td>84</td><td>84.00</td></tr>
+<tr class="wht"><td class="lf">Non-Logical</td><td>0</td><td>0</td><td></td></tr>
+<tr class="wht"><td class="lf">Event</td><td>0</td><td>0</td><td></td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       71
+ EXPRESSION ((wr_word_addr &lt; MEM_DEPTH) &amp;&amp; (AWADDR &lt; (MEM_DEPTH * 4)))
+             -------------1------------    -------------2------------
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       74
+ EXPRESSION ((wr_word_addr &gt;= 4'ha) &amp;&amp; (wr_word_addr &lt;= 4'hc))
+             -----------1----------    -----------2----------
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       87
+ EXPRESSION ((wr_state == W_RESP) &amp;&amp; BVALID &amp;&amp; BREADY)
+             ----------1---------    ---2--    ---3--
+</pre>
+<table class="noborder">
+<col span="3" width="40">
+<tr><th>-1-</th><th>-2-</th><th>-3-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td>1</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       92
+ EXPRESSION (AWVALID &amp;&amp; AWREADY)
+             ---1---    ---2---
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       98
+ EXPRESSION (WVALID &amp;&amp; WREADY)
+             ---1--    ---2--
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       116
+ EXPRESSION (AWVALID || WVALID)
+             ---1---    ---2--
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       118
+ EXPRESSION ((aw_done || (AWVALID &amp;&amp; AWREADY)) &amp;&amp; (w_done || (WVALID &amp;&amp; WREADY)))
+             ----------------1----------------    ---------------2--------------
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       118
+ SUB-EXPRESSION (aw_done || (AWVALID &amp;&amp; AWREADY))
+                 ---1---    ----------2---------
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       118
+ SUB-EXPRESSION (AWVALID &amp;&amp; AWREADY)
+                 ---1---    ---2---
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uRed"><td>1</td><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       118
+ SUB-EXPRESSION (w_done || (WVALID &amp;&amp; WREADY))
+                 ---1--    ---------2--------
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       118
+ SUB-EXPRESSION (WVALID &amp;&amp; WREADY)
+                 ---1--    ---2--
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uRed"><td>1</td><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       120
+ EXPRESSION (aw_done || (AWVALID &amp;&amp; AWREADY))
+             ---1---    ----------2---------
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       120
+ SUB-EXPRESSION (AWVALID &amp;&amp; AWREADY)
+                 ---1---    ---2---
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uRed"><td>1</td><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       121
+ EXPRESSION (w_done || (WVALID &amp;&amp; WREADY))
+             ---1--    ---------2--------
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       121
+ SUB-EXPRESSION (WVALID &amp;&amp; WREADY)
+                 ---1--    ---2--
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uRed"><td>1</td><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       123
+ EXPRESSION (AWVALID &amp;&amp; AWREADY)
+             ---1---    ---2---
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uRed"><td>1</td><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       124
+ EXPRESSION (WVALID &amp;&amp; WREADY)
+             ---1--    ---2--
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uRed"><td>1</td><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       125
+ EXPRESSION (BVALID &amp;&amp; BREADY)
+             ---1--    ---2--
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       147
+ EXPRESSION (aw_done || (AWVALID &amp;&amp; AWREADY))
+             ---1---    ----------2---------
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       147
+ SUB-EXPRESSION (AWVALID &amp;&amp; AWREADY)
+                 ---1---    ---2---
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uRed"><td>1</td><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       149
+ EXPRESSION (w_done || (WVALID &amp;&amp; WREADY))
+             ---1--    ---------2--------
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       149
+ SUB-EXPRESSION (WVALID &amp;&amp; WREADY)
+                 ---1--    ---2--
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uRed"><td>1</td><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       153
+ EXPRESSION (AWVALID &amp;&amp; AWREADY)
+             ---1---    ---2---
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uRed"><td>1</td><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       157
+ EXPRESSION (WVALID &amp;&amp; WREADY)
+             ---1--    ---2--
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uRed"><td>1</td><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       164
+ EXPRESSION (wr_addr_ro || wr_addr_unaligned)
+             -----1----    --------2--------
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       176
+ EXPRESSION (BVALID &amp;&amp; BREADY)
+             ---1--    ---2--
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       210
+ EXPRESSION ((rd_word_addr &lt; MEM_DEPTH) &amp;&amp; (ARADDR &lt; (MEM_DEPTH * 4)))
+             -------------1------------    -------------2------------
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       213
+ EXPRESSION ((rd_word_addr &gt;= 4'hd) &amp;&amp; (rd_word_addr &lt;= 4'he))
+             -----------1----------    -----------2----------
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       225
+ EXPRESSION (ARVALID &amp;&amp; ARREADY)
+             ---1---    ---2---
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       226
+ EXPRESSION (RVALID &amp;&amp; RREADY)
+             ---1--    ---2--
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       247
+ EXPRESSION (ARVALID &amp;&amp; ARREADY)
+             ---1---    ---2---
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       256
+ EXPRESSION (rd_addr_wo || rd_addr_unaligned)
+             -----1----    --------2--------
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       272
+ EXPRESSION (RVALID &amp;&amp; RREADY)
+             ---1--    ---2--
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<hr>
+<a name="Toggle"></a>
+Toggle Coverage for Module : <a href="mod1.html" >axi4_lite_slave</a><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s8">
+<td>Totals</td>
+<td class="rt">43</td>
+<td class="rt">37</td>
+<td class="rt">86.05 </td>
+</tr><tr class="s9">
+<td>Total Bits</td>
+<td class="rt">582</td>
+<td class="rt">548</td>
+<td class="rt">94.16 </td>
+</tr><tr class="s9">
+<td nowrap>Total Bits 0->1</td>
+<td class="rt">291</td>
+<td class="rt">274</td>
+<td class="rt">94.16 </td>
+</tr><tr class="s9">
+<td nowrap>Total Bits 1->0</td>
+<td class="rt">291</td>
+<td class="rt">274</td>
+<td class="rt">94.16 </td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s8">
+<td>Ports</td>
+<td class="rt">21</td>
+<td class="rt">18</td>
+<td class="rt">85.71 </td>
+</tr><tr class="s9">
+<td>Port Bits</td>
+<td class="rt">308</td>
+<td class="rt">292</td>
+<td class="rt">94.81 </td>
+</tr><tr class="s9">
+<td nowrap>Port Bits 0->1</td>
+<td class="rt">154</td>
+<td class="rt">146</td>
+<td class="rt">94.81 </td>
+</tr><tr class="s9">
+<td nowrap>Port Bits 1->0</td>
+<td class="rt">154</td>
+<td class="rt">146</td>
+<td class="rt">94.81 </td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s8">
+<td>Signals</td>
+<td class="rt">22</td>
+<td class="rt">19</td>
+<td class="rt">86.36 </td>
+</tr><tr class="s9">
+<td>Signal Bits</td>
+<td class="rt">274</td>
+<td class="rt">256</td>
+<td class="rt">93.43 </td>
+</tr><tr class="s9">
+<td nowrap>Signal Bits 0->1</td>
+<td class="rt">137</td>
+<td class="rt">128</td>
+<td class="rt">93.43 </td>
+</tr><tr class="s9">
+<td nowrap>Signal Bits 1->0</td>
+<td class="rt">137</td>
+<td class="rt">128</td>
+<td class="rt">93.43 </td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Port Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td><td class="alfsrt">Direction</td></tr><tr>
+<td>ACLK</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>ARESETn</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>AWADDR[31:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>AWPROT[2:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>AWVALID</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>AWREADY</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>WDATA[31:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>WSTRB[3:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>WVALID</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>WREADY</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>BRESP[1:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>BVALID</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>BREADY</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>ARADDR[31:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>ARPROT[2:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>ARVALID</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>ARREADY</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>RDATA[17:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>RDATA[18]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>RDATA[29:19]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>RDATA[30]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>RDATA[31]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>RRESP[1:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>RVALID</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>RREADY</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Signal Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td></tr><tr>
+<td>slave_prot[2:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>wr_state[2:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>n_wr_state[2:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>aw_done</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>w_done</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>wr_addr_lat[31:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>wr_data_lat[31:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>wr_strb_lat[3:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>wr_prot_lat[2:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>wr_word_addr[3:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>wr_addr_unaligned</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>wr_addr_ok</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>wr_addr_ro</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>rd_state</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>n_rd_state</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>rd_addr_lat[31:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>rd_prot_lat[2:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>rd_word_idx[3:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>rd_word_addr[3:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>rd_addr_unaligned</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>rd_addr_ok</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>rd_addr_wo</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr></table><br clear=all>
+<hr>
+<a name="FSM"></a>
+FSM Coverage for Module : <a href="mod1.html" >axi4_lite_slave</a><br clear=all>
+<table align=left class="noborder">
+<caption><b>Summary for FSM :: wr_state</b></caption>
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th><th nowrap width=200></th></tr><tr class="wht">
+<td>States</td>
+<td class="rt">5</td>
+<td class="rt">5</td>
+<td class="rt">100.00</td>
+<td>(Not included in score)</td>
+</tr><tr class="s7">
+<td>Transitions</td>
+<td class="rt">10</td>
+<td class="rt">7</td>
+<td class="rt">70.00 </td>
+<td></td>
+</tr><tr class="wht">
+<td>Sequences</td>
+<td class="rt">0</td>
+<td class="rt">0</td>
+<td></td>
+<td></td>
+</tr></table><br clear=all>
+<b>State, Transition and Sequence Details for FSM :: wr_state</b><hr>
+<table align=left class="sortable noborder">
+<tr class="sortablehead">
+<td class="alfsrt">states</td><td>Line No.</td><td class="alfsrt">Covered</td></tr><tr class="uGreen">
+<td nowrap>W_ADDR</td>
+<td class="rt">121</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>W_BOTH</td>
+<td class="rt">116</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>W_DATA</td>
+<td class="rt">120</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>W_IDLE</td>
+<td class="rt">108</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>W_RESP</td>
+<td class="rt">119</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<br clear=all>
+<table align=left class="sortable noborder">
+<tr class="sortablehead">
+<td class="alfsrt">transitions</td><td>Line No.</td><td class="alfsrt">Covered</td></tr><tr class="uRed">
+<td nowrap>W_ADDR->W_IDLE</td>
+<td class="rt">108</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>W_ADDR->W_RESP</td>
+<td class="rt">123</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>W_BOTH->W_ADDR</td>
+<td class="rt">121</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>W_BOTH->W_DATA</td>
+<td class="rt">120</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td nowrap>W_BOTH->W_IDLE</td>
+<td class="rt">108</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>W_BOTH->W_RESP</td>
+<td class="rt">119</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td nowrap>W_DATA->W_IDLE</td>
+<td class="rt">108</td>
+<td>Not&nbsp;Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>W_DATA->W_RESP</td>
+<td class="rt">124</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>W_IDLE->W_BOTH</td>
+<td class="rt">116</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td nowrap>W_RESP->W_IDLE</td>
+<td class="rt">108</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<br clear=all>
+<hr>
+<a name="Branch"></a>
+Branch Coverage for Module : <a href="mod1.html" >axi4_lite_slave</a><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Line No.</th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s9">
+<td>Branches</td>
+<td></td>
+<td class="rt">58</td>
+<td class="rt">54</td>
+<td class="rt">93.10 </td>
+</tr><tr class="s10">
+<td>IF</td>
+<td class="rt">78</td>
+<td class="rt">5</td>
+<td class="rt">5</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>IF</td>
+<td class="rt">108</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s9">
+<td>CASE</td>
+<td class="rt">115</td>
+<td class="rt">13</td>
+<td class="rt">12</td>
+<td class="rt">92.31 </td>
+</tr><tr class="s9">
+<td>IF</td>
+<td class="rt">132</td>
+<td class="rt">23</td>
+<td class="rt">22</td>
+<td class="rt">95.65 </td>
+</tr><tr class="s10">
+<td>IF</td>
+<td class="rt">216</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s8">
+<td>CASE</td>
+<td class="rt">224</td>
+<td class="rt">5</td>
+<td class="rt">4</td>
+<td class="rt">80.00 </td>
+</tr><tr class="s8">
+<td>IF</td>
+<td class="rt">233</td>
+<td class="rt">8</td>
+<td class="rt">7</td>
+<td class="rt">87.50 </td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+78             if (!ARESETn) begin
+               <font color = "green">-1-</font>  
+79                 aw_done     <= 1'b0;
+           <font color = "green">        ==></font>
+80                 w_done      <= 1'b0;
+81                 wr_addr_lat <= {ADDR_WIDTH{1'b0}};
+82                 wr_data_lat <= {DATA_WIDTH{1'b0}};
+83                 wr_strb_lat <= {(DATA_WIDTH/8){1'b0}};
+84         
+85                 wr_prot_lat <= 3'b000;
+86             end else begin
+87                 if (wr_state == W_RESP && BVALID && BREADY) begin
+                   <font color = "green">-2-</font>  
+88                     aw_done <= 1'b0;
+           <font color = "green">            ==></font>
+89                     w_done  <= 1'b0;
+90                 end
+91         
+92                else if (AWVALID && AWREADY) begin
+                       <font color = "green">-3-</font>  
+93                     aw_done     <= 1'b1;
+           <font color = "green">            ==></font>
+94                     wr_addr_lat <= AWADDR;
+95                     wr_prot_lat <= AWPROT;
+96         
+97                 end
+98                else if (WVALID && WREADY) begin
+                       <font color = "green">-4-</font>  
+99                     w_done      <= 1'b1;
+           <font color = "green">            ==></font>
+100                    wr_data_lat <= WDATA;
+101                    wr_strb_lat <= WSTRB;
+102                end
+                   MISSING_ELSE
+           <font color = "green">        ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>-3-</th><th nowrap width=80>-4-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+108            if (!ARESETn) wr_state <= W_IDLE;
+               <font color = "green">-1-</font>  
+           <font color = "green">    ==></font>
+109            else          wr_state <= n_wr_state;
+           <font color = "green">    ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+115            case (wr_state)
+               <font color = "red">-1-</font>  
+116                W_IDLE: if (AWVALID || WVALID) n_wr_state = W_BOTH;
+                           <font color = "green">-2-</font>  
+           <font color = "green">        ==></font>
+                   MISSING_ELSE
+           <font color = "green">        ==></font>
+117                W_BOTH: begin
+118                    if ((aw_done || (AWVALID && AWREADY)) &&
+                       <font color = "green">-3-</font>  
+119                        (w_done  || (WVALID  && WREADY ))) n_wr_state = W_RESP;
+           <font color = "green">                ==></font>
+120                    else if (aw_done || (AWVALID && AWREADY)) n_wr_state = W_DATA;
+                            <font color = "green">-4-</font>  
+           <font color = "green">            ==></font>
+121                    else if (w_done  || (WVALID  && WREADY))  n_wr_state = W_ADDR;
+                            <font color = "green">-5-</font>  
+           <font color = "green">            ==></font>
+                       MISSING_ELSE
+           <font color = "green">            ==></font>
+122                end
+123                W_ADDR: if (AWVALID && AWREADY) n_wr_state = W_RESP;
+                           <font color = "green">-6-</font>  
+           <font color = "green">        ==></font>
+                   MISSING_ELSE
+           <font color = "green">        ==></font>
+124                W_DATA: if (WVALID  && WREADY)  n_wr_state = W_RESP;
+                           <font color = "green">-7-</font>  
+           <font color = "green">        ==></font>
+                   MISSING_ELSE
+           <font color = "green">        ==></font>
+125                W_RESP: if (BVALID  && BREADY)  n_wr_state = W_IDLE;
+                           <font color = "green">-8-</font>  
+           <font color = "green">        ==></font>
+                   MISSING_ELSE
+           <font color = "green">        ==></font>
+126                default:                        n_wr_state = W_IDLE;
+           <font color = "red">        ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>-3-</th><th nowrap width=80>-4-</th><th nowrap width=80>-5-</th><th nowrap width=80>-6-</th><th nowrap width=80>-7-</th><th nowrap width=80>-8-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>W_IDLE </td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>W_IDLE </td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>W_BOTH </td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>W_BOTH </td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>W_BOTH </td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>W_BOTH </td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>W_ADDR </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>W_ADDR </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>W_DATA </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>W_DATA </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>W_RESP </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>W_RESP </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>default</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+132            if (!ARESETn) begin
+               <font color = "green">-1-</font>  
+133                AWREADY <= 1'b0;
+           <font color = "green">        ==></font>
+134                WREADY  <= 1'b0;
+135                BVALID  <= 1'b0;
+136                BRESP   <= RESP_OKAY;
+137                for (i = 0; i < MEM_DEPTH; i = i + 1)
+138                    reg_file[i] <= {DATA_WIDTH{1'b0}};
+139            end else begin
+140                case (wr_state)
+                   <font color = "red">-2-</font>  
+141                    W_IDLE: begin
+142                        AWREADY <= 1'b1;
+           <font color = "green">                ==></font>
+143                        WREADY  <= 1'b1;
+144                        BVALID  <= 1'b0;
+145                    end
+146                    W_BOTH: begin
+147                        if (aw_done || (AWVALID && AWREADY))
+                           <font color = "green">-3-</font>  
+148                             AWREADY <= 1'b0;
+           <font color = "green">                     ==></font>
+                                MISSING_ELSE
+           <font color = "green">                     ==></font>
+149                        if (w_done  || (WVALID  && WREADY ))  WREADY  <= 1'b0;
+                           <font color = "green">-4-</font>  
+           <font color = "green">                ==></font>
+                           MISSING_ELSE
+           <font color = "green">                ==></font>
+150                    end
+151                    W_ADDR: begin
+152                        AWREADY <= 1'b1;
+153                        if (AWVALID && AWREADY) AWREADY <= 1'b0;
+                           <font color = "green">-5-</font>  
+           <font color = "green">                ==></font>
+                           MISSING_ELSE
+           <font color = "green">                ==></font>
+154                    end
+155                    W_DATA: begin
+156                        WREADY <= 1'b1;
+157                        if (WVALID && WREADY) WREADY <= 1'b0;
+                           <font color = "green">-6-</font>  
+           <font color = "green">                ==></font>
+                           MISSING_ELSE
+           <font color = "green">                ==></font>
+158                    end
+159                    W_RESP: begin
+160                        if (!BVALID) begin
+                           <font color = "green">-7-</font>  
+161                            if (!wr_addr_ok) begin
+                               <font color = "green">-8-</font>  
+162                                BRESP  <= RESP_DECERR;
+           <font color = "green">                        ==></font>
+163                                reg_file[AWADDR[$clog2(MEM_DEPTH)+1:2]] <= 0;
+164                            end else if (wr_addr_ro || wr_addr_unaligned) begin
+                                        <font color = "green">-9-</font>  
+165                                BRESP  <= RESP_SLVERR;
+           <font color = "green">                        ==></font>
+166                                reg_file[AWADDR[$clog2(MEM_DEPTH)+1:2]] <= 0;
+167                            end else begin
+168                                if (wr_strb_lat[0]) reg_file[wr_addr_lat[$clog2(MEM_DEPTH)+1:2]][ 7: 0] <= wr_data_lat[ 7: 0];
+                                   <font color = "green">-10-</font>  
+           <font color = "green">                        ==></font>
+                                   MISSING_ELSE
+           <font color = "green">                        ==></font>
+169                                if (wr_strb_lat[1]) reg_file[wr_addr_lat[$clog2(MEM_DEPTH)+1:2]][15: 8] <= wr_data_lat[15: 8];
+                                   <font color = "green">-11-</font>  
+           <font color = "green">                        ==></font>
+                                   MISSING_ELSE
+           <font color = "green">                        ==></font>
+170                                if (wr_strb_lat[2]) reg_file[wr_addr_lat[$clog2(MEM_DEPTH)+1:2]][23:16] <= wr_data_lat[23:16];
+                                   <font color = "green">-12-</font>  
+           <font color = "green">                        ==></font>
+                                   MISSING_ELSE
+           <font color = "green">                        ==></font>
+171                                if (wr_strb_lat[3]) reg_file[wr_addr_lat[$clog2(MEM_DEPTH)+1:2]][31:24] <= wr_data_lat[31:24];
+                                   <font color = "green">-13-</font>  
+           <font color = "green">                        ==></font>
+                                   MISSING_ELSE
+           <font color = "green">                        ==></font>
+172                                BRESP  <= RESP_OKAY;
+173                            end
+174                            BVALID <= 1'b1;
+175                        end
+176                       else if (BVALID && BREADY) BVALID <= 1'b0;
+                               <font color = "green">-14-</font>  
+           <font color = "green">               ==></font>
+177                        else begin
+178                            reg_file[AWADDR[$clog2(MEM_DEPTH)+1:2]] <= reg_file[AWADDR[$clog2(MEM_DEPTH)+1:2]];
+           <font color = "green">                    ==></font>
+179                          // BVALID <= BVALID;
+180        //                   reg_file[wr_addr_lat[$clog2(MEM_DEPTH)+1:2]][ 7: 0] <= reg_file[wr_addr_lat[$clog2(MEM_DEPTH)+1:2]][ 7: 0];
+181        //                   reg_file[wr_addr_lat[$clog2(MEM_DEPTH)+1:2]][15: 8] <= reg_file[wr_addr_lat[$clog2(MEM_DEPTH)+1:2]][15: 8];
+182        //                   reg_file[wr_addr_lat[$clog2(MEM_DEPTH)+1:2]][23:16] <= reg_file[wr_addr_lat[$clog2(MEM_DEPTH)+1:2]][23:16];
+183        //                   reg_file[wr_addr_lat[$clog2(MEM_DEPTH)+1:2]][31:24] <= reg_file[wr_addr_lat[$clog2(MEM_DEPTH)+1:2]][31:24];
+184                           //BRESP <= BRESP;
+185                        end
+186                    end
+                       MISSING_DEFAULT
+           <font color = "red">            ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>-3-</th><th nowrap width=80>-4-</th><th nowrap width=80>-5-</th><th nowrap width=80>-6-</th><th nowrap width=80>-7-</th><th nowrap width=80>-8-</th><th nowrap width=80>-9-</th><th nowrap width=80>-10-</th><th nowrap width=80>-11-</th><th nowrap width=80>-12-</th><th nowrap width=80>-13-</th><th nowrap width=80>-14-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>W_IDLE </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>W_BOTH </td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>W_BOTH </td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>W_BOTH </td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>W_BOTH </td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>W_ADDR </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>W_ADDR </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>W_DATA </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>W_DATA </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>W_RESP </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>W_RESP </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>W_RESP </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>W_RESP </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>W_RESP </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>W_RESP </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>W_RESP </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>W_RESP </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>W_RESP </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>W_RESP </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>W_RESP </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>W_RESP </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>0</td>
+<td align=center>MISSING_DEFAULT</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+216            if (!ARESETn) rd_state <= R_IDLE;
+               <font color = "green">-1-</font>  
+           <font color = "green">    ==></font>
+217            else          rd_state <= n_rd_state;
+           <font color = "green">    ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+224            case (rd_state)
+               <font color = "red">-1-</font>  
+225                R_IDLE:  if (ARVALID && ARREADY)   n_rd_state = R_DATA;
+                            <font color = "green">-2-</font>  
+           <font color = "green">        ==></font>
+                   MISSING_ELSE
+           <font color = "green">        ==></font>
+226                R_DATA:  if (RVALID && RREADY)     n_rd_state = R_IDLE;
+                            <font color = "green">-3-</font>  
+           <font color = "green">        ==></font>
+                   MISSING_ELSE
+           <font color = "green">        ==></font>
+227                default:                           n_rd_state = R_IDLE;
+           <font color = "red">        ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>-3-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>R_IDLE </td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>R_IDLE </td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>R_DATA </td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>R_DATA </td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>default</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+233            if (!ARESETn) begin
+               <font color = "green">-1-</font>  
+234                ARREADY     <= 1'b0;
+           <font color = "green">        ==></font>
+235                RVALID      <= 1'b0;
+236                RDATA       <= {DATA_WIDTH{1'b0}};
+237                RRESP       <= RESP_OKAY;
+238                rd_addr_lat <= {ADDR_WIDTH{1'b0}};
+239                rd_prot_lat <= 3'b000;
+240            end else begin
+241                case (rd_state)
+                   <font color = "red">-2-</font>  
+242        
+243                    R_IDLE: begin
+244                        ARREADY <= 1'b1;
+245                        RVALID  <= 1'b0;
+246        
+247                        if (ARVALID && ARREADY) begin
+                           <font color = "green">-3-</font>  
+248                            rd_addr_lat <= ARADDR;
+249                            rd_prot_lat <= ARPROT;
+250        
+251        
+252                            if (!rd_addr_ok)begin
+                               <font color = "green">-4-</font>  
+253                                RRESP <= RESP_DECERR;
+           <font color = "green">                        ==></font>
+254                                RDATA <= 0;
+255                            end
+256                            else if (rd_addr_wo || rd_addr_unaligned) begin
+                                    <font color = "green">-5-</font>  
+257                                RRESP <= RESP_SLVERR;
+           <font color = "green">                        ==></font>
+258                                RDATA <= 0;
+259                            end
+260                            else begin
+261                                RRESP <= RESP_OKAY;
+           <font color = "green">                        ==></font>
+262                                RDATA <= reg_file[ARADDR[$clog2(MEM_DEPTH)+1:2]];
+263                                
+264                            end
+265                            RVALID <= 1'b1;
+266                            ARREADY <= 1'b0;
+267                        end
+                           MISSING_ELSE
+           <font color = "green">                ==></font>
+268                    end
+269        
+270        
+271                    R_DATA: begin
+272                        if (RVALID && RREADY)
+                           <font color = "green">-6-</font>  
+273                            RVALID <= 1'b0;
+           <font color = "green">                    ==></font>
+                               MISSING_ELSE
+           <font color = "green">                    ==></font>
+274                    end
+                       MISSING_DEFAULT
+           <font color = "red">            ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>-3-</th><th nowrap width=80>-4-</th><th nowrap width=80>-5-</th><th nowrap width=80>-6-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>R_IDLE </td>
+<td align=center>1</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>R_IDLE </td>
+<td align=center>1</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>R_IDLE </td>
+<td align=center>1</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>R_IDLE </td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>R_DATA </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>R_DATA </td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>0</td>
+<td align=center>MISSING_DEFAULT</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr></table><br clear=all>
+</div>
+</div>
+<div class="ui-layout-center-inner-north">
+<div id="center-bread-crumb" class="breadCrumb module urg-margin-bottom">
+  <ul name="inst_tag_1">
+    <li>
+      <a href="#Line">Line</a>    </li>
+    <li>
+      <a href="#Cond">Cond</a>    </li>
+    <li>
+      <a href="#Toggle">Toggle</a>    </li>
+    <li>
+      <a href="#FSM">FSM</a>    </li>
+    <li>
+      <a href="#Branch">Branch</a>    </li>
+  </ul>
+  <ul name="tag_axi4_lite_slave">
+    <li>
+      <a href="#Line">Line</a>    </li>
+    <li>
+      <a href="#Cond">Cond</a>    </li>
+    <li>
+      <a href="#Toggle">Toggle</a>    </li>
+    <li>
+      <a href="#FSM">FSM</a>    </li>
+    <li>
+      <a href="#Branch">Branch</a>    </li>
+  </ul>
+</div>
+</div>
+</div>
+<div class="ui-layout-south">
+<table align=center><tr><td class="s0 cl">0%</td>
+<td class="s1 cl">10%</td>
+<td class="s2 cl">20%</td>
+<td class="s3 cl">30%</td>
+<td class="s4 cl">40%</td>
+<td class="s5 cl">50%</td>
+<td class="s6 cl">60%</td>
+<td class="s7 cl">70%</td>
+<td class="s8 cl">80%</td>
+<td class="s9 cl">90%</td>
+<td class="s10 cl">100%</td></tr></table></div>
+</body>
+</html>

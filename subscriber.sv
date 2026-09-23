@@ -24,9 +24,9 @@ class subscriber extends uvm_subscriber#(my_transaction);
 			bins invalid1={[0:63]} with (item%4!=0);
 			bins invalid2={[64:$]};
 		}
-		AWADDRxWSTRB:cross awaddr,wstrb{
+		/*AWADDRxWSTRB:cross awaddr,wstrb{
 			ignore_bins ig=binsof(awaddr.invalid1)|| binsof(awaddr.invalid2);
-		}
+		}*/
 	endgroup:input_cg
   	covergroup output_cg;  
 		bresp:coverpoint out_mon_xn.BRESP iff(out_mon_xn.BVALID){

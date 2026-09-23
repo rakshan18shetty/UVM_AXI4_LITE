@@ -3,11 +3,12 @@ class test extends uvm_test;
 
 	environment env;
 	sequences seq;
-	write_simul_seq wr_simul;
 	read_only_seq rd_a,rd_b,rd_c;
+	write_simul_seq wr_simul;
+	wr_rd_simul_seq wr_rd;
 	write_aw_then_w_seq aw_w;
 	write_w_then_aw_seq w_aw;
-	wr_rd_simul_seq wr_rd;
+	back_pressure_seq bp;
 
 	function new(string name,uvm_component parent);
 		super.new(name,parent);
@@ -44,37 +45,41 @@ class test extends uvm_test;
 	task test_cases();
 		fork
 			begin
-				wr_simul=write_simul_seq::type_id::create("wr_simul");
-				wr_simul.start(env.act.sqr);
-			end 
+				seq=sequences::type_id::create("seq");
+				seq.start(env.act.sqr);
+			end
 			begin
 				rd_a=read_only_seq::type_id::create("rd_a");
 				rd_a.start(env.act.sqr);
-			end 
-			begin
-				aw_w=write_aw_then_w_seq::type_id::create("aw_w");
-				aw_w.start(env.act.sqr);
 			end 
 			begin
 				rd_b=read_only_seq::type_id::create("rd_b");
 				rd_b.start(env.act.sqr);
 			end 
 			begin
-				w_aw=write_w_then_aw_seq::type_id::create("w_aw");
-				w_aw.start(env.act.sqr);
-			end 
-			begin
 				rd_c=read_only_seq::type_id::create("rd_c");
 				rd_c.start(env.act.sqr);
 			end
+			begin
+				wr_simul=write_simul_seq::type_id::create("wr_simul");
+				wr_simul.start(env.act.sqr);
+			end 
 			begin
 				wr_rd=wr_rd_simul_seq::type_id::create("wr_rd");
 				wr_rd.start(env.act.sqr);
 			end
 			begin
-				seq=sequences::type_id::create("seq");
-				seq.start(env.act.sqr);
+				aw_w=write_aw_then_w_seq::type_id::create("aw_w");
+				aw_w.start(env.act.sqr);
 			end 
+			begin
+				w_aw=write_w_then_aw_seq::type_id::create("w_aw");
+				w_aw.start(env.act.sqr);
+			end 
+			begin
+				bp=back_pressure_seq::type_id::create("bp");
+				bp.start(env.act.sqr);
+			end
 		join
 	endtask
 endclass
