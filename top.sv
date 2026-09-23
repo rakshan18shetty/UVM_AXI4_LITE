@@ -47,6 +47,6 @@ module top;
 
 	initial begin
 		uvm_config_db#(virtual my_if)::set(null,"*","vif",vif);
-		run_test("test");
+		run_test();
 	end
 endmodule
